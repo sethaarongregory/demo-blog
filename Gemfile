@@ -42,8 +42,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-# Better errors
-gem 'better_errors', '~> 2.10', '>= 2.10.1'
+
 
 # Bulma CSS
 gem 'bulma-rails', '~> 0.9.4'
@@ -74,7 +73,10 @@ group :development do
 
   # Guard
   gem 'guard', '~> 2.18', '>= 2.18.1'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  # Better errors 
+  gem 'better_errors', '~> 2.10', '>= 2.10.1'
 end
 
 group :test do
